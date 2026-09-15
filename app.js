@@ -1,5 +1,9 @@
-const mensagem = "Hello World!";
+const titulo = "Sistema de Mensagens";
+const mensagem = "Olá, mundo!";
 
-const elemento = document.getElementById("mensagem");
+const elementoTitulo = document.getElementById("titulo");
+const elementoMensagem = document.getElementById("mensagem");
 
-elemento.textContent = mensagem;
+elementoTitulo.textContent = titulo;
+elementoMensagem.textContent = mensagem;
+
