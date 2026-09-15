@@ -1,9 +1,14 @@
 const titulo = "Sistema de Mensagens";
-const mensagem = "Olá, mundo!";
+const mensagens = [
+    "Hello World!",
+    "Olá, mundo!",
+    "Bem-vindo à aplicação!",
+    "Esta é uma nova mensagem."
+];
 
 const elementoTitulo = document.getElementById("titulo");
-const elementoMensagem = document.getElementById("mensagem");
+const elementoMensagens = document.getElementById("mensagens");
 
 elementoTitulo.textContent = titulo;
-elementoMensagem.textContent = mensagem;
+elementoMensagens.textContent = mensagens;
 
