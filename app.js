@@ -1,14 +1,15 @@
-const titulo = "Sistema de Mensagens";
 const mensagens = [
     "Hello World!",
     "Olá, mundo!",
     "Bem-vindo à aplicação!",
     "Esta é uma nova mensagem."
 ];
+const lista = document.getElementById("lista-mensagens");
 
-const elementoTitulo = document.getElementById("titulo");
-const elementoMensagens = document.getElementById("mensagens");
+for (let i = 0; i < mensagens.length; i++) {
+    const paragrafo = document.createElement("p");
 
-elementoTitulo.textContent = titulo;
-elementoMensagens.textContent = mensagens;
+    paragrafo.textContent = mensagens[i];
 
+    lista.appendChild(paragrafo);
+}
